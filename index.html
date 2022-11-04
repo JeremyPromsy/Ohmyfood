@@ -16,8 +16,8 @@
           </div>          
     </header>
 
-<div class="corpsContainer">
 <div class="corps"> 
+<main class="corpsContainer">
 <!-- Localisation -->
 <div class="localisation">
       <span class="localisationIcon">    
@@ -27,66 +27,59 @@
 </div>
 
 <!-- Search -->
+<div class="search">
 <!-- TextInfo -->
 <section class="titre">
-  <h2 class="H2Titre">Réservez le menu qui vous convient</h2>
+  <h2 class="H2Titre"><strong>Réservez le menu qui vous convient</strong></h2>
   <p class="PTitre">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 </section>
 
 <!-- Bouton Search -->
 <div class="searchBouton">
-  <span class="searchBouton">Explorer nos restaurants</span>
+  <a class="searchBoutonExplore" href="#restaurant">Explorer nos restaurants</a>
 </div>
-
+</div>
 
 <!-- Fonctionnement--> 
 <section class="fonctionnement">      
-  <div class="fonctionnementFilters">
     <h2 class="fonctionnementhFiltersTitle">Fonctionnement</h2>
-      
-    <div class="fonctionnementFiltersFilter">
-      <span class="fonctionnementChiffre">1</span>
-        <div class="fonctionnementIcon">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-        </div>
-          <span class="fonctionnementTitle">Choississez un restaurant</span>
-    </div>
+  <div class="fonctionnementFilters">
+    <article class="fonctionnementFiltersFilter">
+        <div class="fonctionnementChiffre">1</div>
+        <span class="fonctionnementIcon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <h3 class="fonctionnementTitle">Choississez un restaurant</h3>
+    </article>
 
+      <article class="fonctionnementFiltersFilter">
+          <div class="fonctionnementChiffre">2</div>
+          <span class="fonctionnementIcon"><i class="fa-solid fa-list"></i></span>
+          <h3 class="fonctionnementTitle">Composez votre menu</h3>
+    </article>
 
-    <div class="fonctionnementFiltersFilter">
-      <span class="fonctionnementChiffre">2</span>
-        <div class="fonctionnementIcon">
-          <i class="fa-solid fa-list"></i>
-        </div>
-          <span class="fonctionnementTitle">Composez votre menu</span>
-    </div>
-
-    <div class="fonctionnementFiltersFilter">
-      <span class="fonctionnementChiffre">3</span>
-        <div class="fonctionnementIcon">
-          <i class="fas fa-store"></i>
-        </div>
-          <span class="fonctionnementTitle">Dégustez au restaurant</span>
-    </div>
-
+      <article class="fonctionnementFiltersFilter">
+          <div class="fonctionnementChiffre">3</div>
+          <span class="fonctionnementIcon"><i class="fas fa-store"></i></span>
+          <h3 class="fonctionnementTitle">Dégustez au restaurant</h3>
+    </article>
   </div>
 </section>
 
 <!-- Restaurant -->      
-<section class="restaurant">  
+<section class="restaurant" id="restaurant">  
   <h2 class="nomPart">Restaurant</h2>
       <div class="classement">
         <div class="articleContainer">
           <a href="#">
             <article class="article">
               <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" title="La palette du goût" class="image">
-              <div class="contenu">
-                <h4 class="nomActivité">La palette du goût</h4>
-                <p>Ménilmontant</p>
-              </div>
-              <div class="restaurantIcon">
-                <i class="far fa-heart"></i>
-              </div>
+              <div class="nouveau">Nouveau</div>
+            <section class="articleText">
+                <div class="contenu">
+                  <h3 class="restaurantNom">La palette du goût</h3>
+                  <p class="restaurantLocation">Ménilmontant</p>
+                </div>
+                <span class="restaurantIcon"><i class="far fa-heart"></i></span>
+              </section>  
             </article>
           </a>
         </div>
@@ -94,13 +87,14 @@
           <a href="#">
             <article class="article">
               <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" title="La note enchantée" class="image">
+              <div class="nouveau">Nouveau</div>
+              <div class="articleText">
               <div class="contenu">
-                <h4 class="nomActivité">La note enchantée</h4>
-                <p>Charonne</p>
+                <h3 class="nomActivité">La note enchantée</h3>
+                <p class="restaurantLocation">Charonne</p>
               </div>
-              <div class="restaurantIcon">
-                <i class="far fa-heart"></i>
-              </div>
+              <span class="restaurantIcon"><i class="far fa-heart"></i></span>
+            </div>
             </article>
           </a>
         </div>
@@ -108,13 +102,13 @@
           <a href="#">
             <article class="article">
               <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" title="À la française" class="image">
+              <div class="articleText">
               <div class="contenu">
-                <h4 class="nomActivité">À la française</h4>
-                <p>Cité Rouge</p>
+                <h3 class="nomActivité">À la française</h3>
+                <p class="restaurantLocation">Cité Rouge</p>
               </div>
-              <div class="restaurantIcon">
-                <i class="far fa-heart"></i>
-              </div>
+              <span class="restaurantIcon"><i class="far fa-heart"></i></span>
+            </div>
             </article>
           </a>
         </div>
@@ -122,19 +116,19 @@
           <a href="#">
             <article class="article">
               <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" title="Le délice des sens" class="image">
+              <div class="articleText">
               <div class="contenu">
-                <h4 class="nomActivité">Le délice des sens</h4>
-                <p>Folie-Méricourt</p>
+                <h3 class="nomActivité">Le délice des sens</h3>
+                <p class="restaurantLocation">Folie-Méricourt</p>
               </div>
-              <div class="restaurantIcon">
-                <i class="far fa-heart"></i>
-              </div>
+              <span class="restaurantIcon"><i class="far fa-heart"></i></span>
+            </div>
             </article>
           </a>
         </div>
       </div>    
 </section>
-
+</main>
 
 <!-- Footer-->
 <footer class="footer">
@@ -146,19 +140,18 @@
               <p class="lien"></i><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></p>
           </li>
           <li>
-              <p class="lien"><a href="#"><i class="fas fa-handshake-alt"></i>Devenir partenaire</a></p>
+              <p class="lien"><a href="#"><i class="fas fa-handshake-alt"></i> Devenir partenaire</a></p>
           </li>
           <li>
               <p class="lien"><a href="#">Mentions légales</a></p>
           </li>
           <li>
-            <p class="lien"><a href="#">Contact</a></p>
+            <p class="lien"> <a href="mailto:contact@ohmyfood.com">Contact</a></p>
           </li>
       </ul>
   </div>
   
 </footer>
 </div> 
-</div>
 </body>
 </html>
