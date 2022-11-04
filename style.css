@@ -9,4 +9,135 @@ h1, h3 {
     font-family: 'Shrikhand';
 }
 
+/* Taille texte */
+h1{
+      font-size: 30px; 
+}
 
+h2{
+      font-size: 20px; 
+}
+
+h3{
+      font-size:15px; 
+} 
+
+p{
+  font-size: 15px; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Taille Contenu */
+.corpsContainer {
+    display: flex;
+    justify-content: center; 
+    overflow: hidden; 
+}
+  
+.corps{
+    max-width: 1400px;
+}
+
+html, body {
+    margin: 0;
+}
+
+/* HEADER */
+.ohmyfoodDivLogo {
+    height: 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: center; 
+  margin-top: 5px;
+  padding: 20px;
+}
+
+/* Localisation */
+.localisation {
+    display: flex;
+    justify-content: center; 
+    margin-top: 5px;
+    align-items: center;
+    background:#F2F2F2;;
+}
+
+.localisationIcon {
+    padding-right: 20px;
+}
+
+
+
+
+/* Restaurant */
+.restaurant {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+  
+.restaurant a .article {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px #a5a5a5;
+    height: 500px;
+}
+  
+.restaurant .image {
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+  
+.restaurant .contenu {
+    margin-left: 20px;
+}
+ 
+.articleContainer{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+  
+.restaurant .image{
+    height: 400px;
+}
+
+
+
+/* Footer */
+.footer{
+    display: flex;
+    background-color: #F2F2F2;
+    color: #FFFFFF;
+  }
+
+.footer a{
+    color: #FFFFFF;
+}
+  
+  .footer .colonne {
+    padding-left: 20px;
+  }
+  
+  footer .colonne ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  
+  .footer .colonne .titreFooter {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .footer .colonne .titreFooter .lien {
+    margin-top: 15px;
+    margin-bottom: 15px;  
+  }
+  
