@@ -32,15 +32,15 @@ html, body {
 }
 
 /* HEADER */
-.ohmyfoodDivLogo {
-    height: 40px;
+.header {
+    display: flex;
+    margin-top: 5px;
+    padding: 20px;
+    justify-content: center; 
 }
 
-.header {
-  display: flex;
-  justify-content: center; 
-  margin-top: 5px;
-  padding: 20px;
+.ohmyfoodLogo {
+    height: 50px;
 }
 
 /* Localisation */
@@ -251,4 +251,98 @@ html, body {
     margin-top: 10px;
     margin-bottom: 10px; 
   }
+
+
+/* Autres pages Global */
+/* Header */
+.backIcon{
+    left: 50px;
+    position: absolute;
+    font-size: 40px;
+}
+
+/* Photo */
+.imagePage{
+    max-width: 100%;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Menu */
+.menu {
+    margin-top: -70px;
+    border-radius: 35px 35px 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.menuHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.menuRestaurantIcon{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* Menu Détails */
+.menuListe{
+    margin-left: 20px;
+}
+
+.menuCategorieTitre{
+    color: grey;
+    font-weight: lighter;
+}
+
+.menuItem{
+    background-color: white;
+    border-radius: 15px;
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+
+.menuInfo{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+}
+
+
+.menuTexte{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuPrix{
+    display: flex;
+    align-items: flex-end;
+}
+
+.menuSelection{
+    display: none;
+}
+
+/* Bouton Commander */
+.commander{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.boutonCommander{
+    color: #fff;
+    background-image: linear-gradient(0deg,rgba(123, 36, 228, 0.9),rgba(254, 96, 209, 0.9));
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100px;
+}
   
