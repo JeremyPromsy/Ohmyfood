@@ -77,14 +77,15 @@ html, body {
 }
 
 /* Bouton */
-.searchBoutonExplore{
+.searchBoutonExplore__gradient{
     color: #fff;
-    background-image: linear-gradient(0deg,rgba(123, 36, 228, 0.9),rgba(254, 96, 209, 0.9));
+    background-image: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 2px 4px 15px #dedede;
     padding: 10px 10px;
     font-size: 20px;
     border-radius: 100px;
     margin-top: 20px;
-    box-shadow: 1px 1px 10px black;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 /* Fonctionnement */
@@ -352,12 +353,15 @@ html, body {
 
 .boutonCommander{
     color: #fff;
-    background-image: linear-gradient(0deg,rgba(123, 36, 228, 0.9),rgba(254, 96, 209, 0.9));
+    background-image: linear-gradient(#ff79da, #9356dc);
     padding-left: 50px;
     padding-top: 20px;
     padding-right: 50px;
     padding-bottom: 20px;
     font-size: 20px;
     border-radius: 100px;
+    cursor: pointer;
+    transition: 600ms ease-in-out;
+    box-shadow: 2px 4px 15px #dedede;
 }
-  
+
