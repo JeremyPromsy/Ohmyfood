@@ -79,7 +79,7 @@ html, body {
 /* Bouton */
 .searchBoutonExplore{
     color: #fff;
-    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    background-image: linear-gradient(0deg,rgba(123, 36, 228, 0.9),rgba(254, 96, 209, 0.9));
     padding: 10px 10px;
     font-size: 20px;
     border-radius: 100px;
@@ -114,12 +114,11 @@ html, body {
     margin-right:20px;
     padding: 30px;
     width: 100%;
-
 }
 
 .fonctionnementFiltersFilter:hover{
-    border: 2px solid #9356DC;
-    background-color: #9356DC;
+    border: 2px solid #f5edff;
+    background-color: #f5edff;
 }
   
 .fonctionnementChiffre{
@@ -128,11 +127,11 @@ html, body {
     justify-content: center;
     background: #9356dc;
     color: white;
-    width: 3rem;
-    height: 3rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     position: absolute;
-    left: -1.5rem;
+    left: -25px;
 }
   
 .fonctionnementIcon {
@@ -264,7 +263,7 @@ html, body {
 /* Photo */
 .imagePage{
     max-width: 100%;
-    max-height: 400px;
+    max-height: 500px;
     width: 100%;
     object-fit: cover;
 }
@@ -300,6 +299,16 @@ html, body {
     font-weight: lighter;
 }
 
+.menuCategorieTitre:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #99e2d0;
+    position: absolute;
+    left:20px;
+    margin-top: 30px;
+}
+
 .menuItem{
     background-color: white;
     border-radius: 15px;
@@ -315,10 +324,13 @@ html, body {
     padding:10px;
 }
 
-
 .menuTexte{
     display: flex;
     flex-direction: column;
+}
+
+.menuDetails{
+    font-weight: lighter;
 }
 
 .menuPrix{
@@ -341,7 +353,10 @@ html, body {
 .boutonCommander{
     color: #fff;
     background-image: linear-gradient(0deg,rgba(123, 36, 228, 0.9),rgba(254, 96, 209, 0.9));
-    padding: 10px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
     font-size: 20px;
     border-radius: 100px;
 }
