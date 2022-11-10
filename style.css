@@ -89,12 +89,17 @@ html, body {
 .search__bouton{
     color: #fff;
     background-image: linear-gradient(#ff79da, #9356dc);
-    box-shadow: 2px 4px 15px #dedede;
+    box-shadow: 1px 10px 21px -11px #000000;
+    border:none;
     padding: 10px 10px;
     font-size: 20px;
     border-radius: 100px;
     margin-top: 20px;
-    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search__bouton:hover{
+    opacity: 0.9;
+    box-shadow: 1px 10px 21px -7px #000000;
 }
 
 /* Fonctionnement */
@@ -369,7 +374,12 @@ html, body {
     padding-bottom: 20px;
     font-size: 20px;
     border-radius: 100px;
-    box-shadow: 2px 4px 15px #dedede;
+    box-shadow: 1px 10px 21px -11px #000000;
+}
+
+.boutonCommander:hover{
+    opacity: 0.9;
+    box-shadow: 1px 10px 21px -7px #000000;
 }
 
 /* Loader */
@@ -394,7 +404,7 @@ html, body {
     border-radius: 50%;
     background-color: #99E2D0;
     margin:0 15px;
-    animation: loader infinite 0.4s alternate;
+    animation: loader infinite 0.3s alternate;
 }
  
 .p2{
