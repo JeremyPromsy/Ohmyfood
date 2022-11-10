@@ -234,6 +234,12 @@ html, body {
     margin-right: 20px;
 }
 
+.restaurant .restaurantIcon .fas:hover{
+    color: transparent;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+}
+
 
 /* Footer */
 .footer{
