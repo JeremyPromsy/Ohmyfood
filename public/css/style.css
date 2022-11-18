@@ -333,6 +333,8 @@ footer .colonne ul {
 /* Menu Détails */
 .menuListe {
   margin-left: 20px;
+  transform: translateY(30px);
+  animation: entrance-effect 1000ms forwards;
 }
 
 .menuCategorieTitre {
