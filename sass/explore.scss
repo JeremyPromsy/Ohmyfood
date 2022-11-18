@@ -1,0 +1,437 @@
+/* POLICE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Shrikhand&display=swap');
+
+* {
+    font-family: 'Roboto', 'Shrikhand', sans-serif;
+}
+  
+h1 {
+    font-family: 'Shrikhand';
+}
+
+/* Taille texte */
+h3{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-weight: bold; 
+} 
+
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Taille Contenu */  
+html, body {
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    margin-top: 5px;
+    padding: 20px;
+    justify-content: center; 
+}
+
+.ohmyfoodLogo {
+    height: 50px;
+}
+
+/* Localisation */
+.localisation {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    align-items: center;
+    background:#f3f3f3;
+    color: black;
+    height: 50px;
+}
+
+.localisation__icone {
+    color: black;
+    padding-right: 5px;
+}
+
+.localisation__texte{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: larger;
+    font-weight:bolder;
+}
+
+/* Search */
+
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fafafa;
+    padding: 30px;
+    &__info{
+    text-align: center;
+    }   
+    &__text{
+    color: gray;
+    margin-bottom: 30px;
+    }
+    &__bouton{
+    color: #fff;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 2px 4px 15px #dedede;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+}
+
+.search__bouton:hover{
+    opacity: 0.9;
+    box-shadow: 1px 10px 21px -7px #000000;
+}
+
+
+/* Fonctionnement */
+.fonctionnementFilters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  
+.fonctionnementhFiltersTitle {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px; 
+}
+  
+.fonctionnementFiltersFilter {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 2px solid #f3f3f3;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-left:20px;
+    margin-right:20px;
+    padding: 30px;
+    width: 100%;
+}
+
+.fonctionnementFiltersFilter:hover{
+    border: 2px solid #f5edff;
+    background-color: #f5edff;
+}
+  
+.fonctionnementChiffre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9356dc;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+}
+  
+.fonctionnementIcon {
+    margin-left: 20px;
+    margin-right: 10px;
+    color: gray;
+}
+
+.fonctionnementTitle{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* Restaurant */
+.restaurant {
+    background: #f6f6f6;
+}
+
+.nomPart{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.restaurant .classement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.restaurant .classement a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px #a5a5a5;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    margin: 10px;
+}
+  
+.restaurant .image {
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+    height: 220px;
+}
+
+.restaurant .nouveau {
+    background: #a9e0d1;
+    color: #3b8468;
+    padding: 10px 20px;
+    border-radius:10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.restaurant .articleText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.restaurant .contenu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.nomActivité{
+    padding-bottom: 5px;
+}
+
+.restaurantLocation{
+    padding-top: 5px;
+}
+
+.restaurant .restaurantIcon{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.restaurant .restaurantIcon .fas:hover{
+    color: transparent;
+    background-image: linear-gradient(#ff79da, #9356dc);
+}
+
+
+/* Footer */
+.footer{
+    display: flex;
+    background-color: #353535;
+    color: #FFFFFF;
+  }
+
+.footer a{
+    color: #FFFFFF;
+}
+  
+  .footer .colonne {
+    padding-left: 20px;
+  }
+  
+  footer .colonne ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  
+  .footer .colonne .titreFooter {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Shrikhand';
+  }
+  
+ .lien {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+  }
+
+
+/* Autres pages Global */
+/* Header */
+.backIcon{
+    left: 50px;
+    position: absolute;
+    font-size: 40px;
+}
+
+/* Photo */
+.imagePage{
+    max-width: 100%;
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Menu */
+.menu {
+    margin-top: -70px;
+    border-radius: 35px 35px 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.menuHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.menuRestaurantIcon{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* Menu Détails */
+.menuListe{
+    margin-left: 20px;
+}
+
+.menuCategorieTitre{
+    color: grey;
+    font-weight: lighter;
+}
+
+.menuCategorieTitre:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #99e2d0;
+    position: absolute;
+    left:20px;
+    margin-top: 30px;
+}
+
+.menuItem{
+    background-color: white;
+    border-radius: 15px;
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+
+.menuInfo{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.menuTexte{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuDetails{
+    font-weight: lighter;
+}
+
+.menuPrix{
+    display: flex;
+    align-items: flex-end;
+}
+
+.menuSelection{
+    display: none;
+}
+
+/* Bouton Commander */
+.commander{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.boutonCommander{
+    color: #fff;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-radius: 100px;
+    box-shadow: 1px 10px 21px -11px #000000;
+}
+
+.boutonCommander:hover{
+    opacity: 0.9;
+    box-shadow: 1px 10px 21px -7px #000000;
+}
+
+.corps{
+    position: relative;
+}
+
+/* Loader */
+.loader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #a5a5a5;
+    top:0;
+    left:0;
+    z-index: 1;
+    opacity: 99%;
+    animation: disparition 2s forwards;
+}
+
+.point{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #99E2D0;
+    margin:0 15px;
+    animation: loader infinite 0.3s alternate;
+}
+ 
+.p2{
+    animation-delay: 0.1s;
+    background-color: #9356DC;
+}
+.p3{
+    animation-delay: 0.2s;
+    background-color: #FF79DA;
+}
+
+@keyframes loader {
+    100% {
+      transform: translateY(-50px); } 
+}
+
+@keyframes disparition {
+    to {
+        visibility: hidden; } 
+}
+
+
+
