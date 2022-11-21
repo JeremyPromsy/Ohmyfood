@@ -333,8 +333,6 @@ footer .colonne ul {
 /* Menu Détails */
 .menuListe {
   margin-left: 20px;
-  transform: translateY(30px);
-  animation: entrance-effect 1000ms forwards;
 }
 
 .menuCategorieTitre {
@@ -359,6 +357,11 @@ footer .colonne ul {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: entrance-effect 1000ms forwards;
 }
 
 .menuInfo {
@@ -383,6 +386,32 @@ footer .colonne ul {
 
 .menuSelection {
   display: none;
+}
+
+@keyframes entrance-effect {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menuItem1 {
+  animation-delay: 300ms;
+}
+
+.menuItem2 {
+  animation-delay: 600ms;
+}
+
+.menuItem3 {
+  animation-delay: 900ms;
+}
+
+.menuItem4 {
+  animation-delay: 1200ms;
 }
 
 /* Bouton Commander */
