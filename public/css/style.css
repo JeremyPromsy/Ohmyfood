@@ -222,46 +222,6 @@ html, body {
   padding-top: 5px;
 }
 
-.restaurantIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-right: 20px;
-}
-
-.restaurantIcon .far {
-  font-size: 30px;
-  z-index: 2;
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.restaurantIcon .far:hover {
-  display: none;
-}
-
-.restaurantIcon .fas {
-  font-size: 30px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: -webkit-linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.restaurant .restaurantIcon .fas:hover {
-  background: -webkit-linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 /* Footer */
 .footer {
   display: flex;
@@ -512,6 +472,45 @@ footer .colonne ul {
   to {
     visibility: hidden;
   }
+}
+.restaurantIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+.restaurantIcon .far {
+  font-size: 30px;
+  z-index: 2;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.restaurantIcon .far:hover {
+  display: none;
+}
+
+.restaurantIcon .fas {
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.restaurant .restaurantIcon .fas:hover {
+  background: -webkit-linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
