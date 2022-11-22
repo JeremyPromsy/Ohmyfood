@@ -356,43 +356,33 @@ html, body {
 }
 
 .menuItem{
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     border-radius: 15px;
-    margin-top:10px;
-    margin-left:20px;
-    margin-right:20px;
-    margin-bottom:10px;
     box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 10%);
-    margin-top: 12px;
+    margin: 15px 15px 0 0;
     transform: translateY(30px);
     opacity: 0;
     animation: entrance-effect 1000ms forwards;
 }
 
-.menuInfo{
-    display: flex;
-    justify-content: space-between;
-    padding:10px;
-}
 
 .menuTexte{
-    display: flex;
-    flex-direction: column;
+    padding: 5px 15px;
+}
+
+.menuTitre{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menuDetails{
-    font-weight: lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
-
-.menuPrix{
-    display: flex;
-    align-items: flex-end;
-}
-
-.menuSelection{
-    display: none;
-}
-
 
 @keyframes entrance-effect {
     0% {
@@ -418,6 +408,39 @@ html, body {
     animation-delay: 1200ms;
   }
 
+ .menuPrix{
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+.menuPrix p {
+    align-self: center;
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+
+.menuPrix .menuSelection {
+    background-color: #99e2d0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    margin-right: -60px;
+    transition: all 400ms;
+}
+
+.menuPrix .fa-check-circle {
+    color: white;
+    transition: all 800ms;
+}
+
+.menuItem:hover .menuSelection {
+    margin-right: 0;
+}
+
+.menuItem:hover .fa-check-circle {
+    transform: rotate(360deg);
+}  
 
 /* Bouton Commander */
 .commander{
