@@ -378,6 +378,30 @@ footer .colonne ul {
   animation-delay: 1200ms;
 }
 
+.menuItem5 {
+  animation-delay: 1500ms;
+}
+
+.menuItem6 {
+  animation-delay: 1800ms;
+}
+
+.menuItem7 {
+  animation-delay: 2100ms;
+}
+
+.menuItem8 {
+  animation-delay: 2400ms;
+}
+
+.menuItem9 {
+  animation-delay: 2700ms;
+}
+
+.menuItem10 {
+  animation-delay: 3000ms;
+}
+
 .menuPrix {
   display: flex;
   gap: 15px;
@@ -447,15 +471,15 @@ footer .colonne ul {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
-  background-color: #a5a5a5;
+  background-color: black;
   top: 0;
   left: 0;
   z-index: 3;
-  opacity: 99%;
-  animation: disparition 2s forwards;
+  opacity: 98%;
+  animation-fill-mode: both;
+  animation: disparition 3s forwards;
 }
 
 .point {
@@ -465,6 +489,8 @@ footer .colonne ul {
   background-color: #99E2D0;
   margin: 0 15px;
   animation: loader infinite 0.3s alternate;
+  position: absolute;
+  margin-top: 400px;
 }
 
 .p2 {
