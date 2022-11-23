@@ -231,17 +231,11 @@ html, body {
   font-size: 30px;
 }
 
-.restaurantIcon .far {
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: white;
+.restaurantIcon .fa-solid {
+  font-size: 35px;
 }
 
-.restaurantIcon .far::before {
-  z-index: 1;
-}
-
-.restaurant .restaurantIcon .fas:hover {
+.restaurantIcon .fas:hover {
   background: -webkit-linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -308,12 +302,6 @@ footer .colonne ul {
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 40px;
-}
-
-.menuRestaurantIcon {
-  display: flex;
-  align-items: center;
-  font-size: 25px;
 }
 
 /* Menu Détails */
