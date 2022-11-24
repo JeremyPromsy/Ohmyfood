@@ -26,6 +26,11 @@ a{
     color: black;
 }
 
+.corps{
+    position: relative;
+    overflow: hidden; 
+}
+
 /* Taille Contenu */  
 html, body {
     margin: 0;
@@ -67,13 +72,13 @@ html, body {
 }
 
 /* Search */
-
 .search{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color:#fafafa;
     padding: 30px;
+    padding-top: 0;
     &__info{
     text-align: center;
     }   
@@ -139,17 +144,21 @@ html, body {
     justify-content: center;
     background: #9356dc;
     color: white;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     position: absolute;
-    left: -25px;
+    left: -20px;
 }
   
 .fonctionnementIcon {
     margin-left: 20px;
     margin-right: 10px;
     color: gray;
+}
+
+.fonctionnementFiltersFilter:hover .fonctionnementIcon{
+    color: #9356dc;
 }
 
 .fonctionnementTitle{
@@ -173,6 +182,7 @@ html, body {
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 20px;
 }
 
 .restaurant .classement a {
@@ -327,6 +337,7 @@ html, body {
     margin-top: 30px;
 }
 
+/* Arrivé des menus */
 .menuItem{
     display: flex;
     justify-content: space-between;
@@ -367,7 +378,7 @@ html, body {
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
 
   .menuItem1 {
     animation-delay: 300ms;
@@ -413,7 +424,6 @@ html, body {
     padding-top: 20px;
 }
 
-
 .menuPrix .fa-check-circle {
     color: white;
     transition: all 800ms;
@@ -450,10 +460,8 @@ html, body {
 .boutonCommander{
     color: #fff;
     background-image: linear-gradient(#ff79da, #9356dc);
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-bottom: 20px;
+    padding: 20px 50px 20px 50px;
+    margin:20px 0 20px 0;
     font-size: 20px;
     border-radius: 100px;
     box-shadow: 1px 10px 21px -11px #000000;
@@ -462,10 +470,6 @@ html, body {
 .boutonCommander:hover{
     opacity: 0.9;
     box-shadow: 1px 10px 21px -7px #000000;
-}
-
-.corps{
-    position: relative;
 }
 
 /* Loader */
@@ -515,4 +519,143 @@ html, body {
 }
 
 
+/* Desktop */
+@media screen and (min-width: 992px) {
+/* Taille menu item */
+.menuTexte{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+/* Fonctionnement */
+.fonctionnementFilters {
+    width:100%;
+    flex-wrap: nowrap;
+}
+
+.fonctionnementFiltersFilter {
+    padding: 25px;
+}
+
+.fonctionnementFiltersFilter h3{
+    font-size: 15px;
+}
+
+/* Acceuil Restaurant */
+.restaurant .classement a {
+    width: 47%;
+}
+}
+
+/* Tablettes */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+/* Taille menu item */
+.menuTexte{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Header */
+.ohmyfoodLogo {
+    height: 40px;
+}
+
+.backIcon{
+    font-size: 30px;
+    left: 30px;
+    margin-top: 3px;
+}
+
+/* Menu */
+.allMenu{
+    margin-top: -20px;
+}
+
+/* Photo */
+.imagePage{
+    max-height: 400px;
+}    
+
+.fonctionnementFilters {
+    width:100%;
+    flex-wrap: nowrap;
+}
+
+.fonctionnementFiltersFilter {
+    padding: 20px;
+}
+
+.fonctionnementFiltersFilter h3{
+    font-size: 15px;
+}
+
+/* Acceuil Restaurant */
+.restaurant .classement a {
+    width: 47%;
+}
+}
+
+/* Téléphone */
+@media screen and (max-width: 767px) {
+/* Header */
+.ohmyfoodLogo {
+    height: 30px;
+}
+
+.backIcon{
+    font-size: 20px;
+    left: 20px;
+    margin-top: 5px;
+}
+
+/* Photo */
+.imagePage{
+    max-height: 300px;
+}
+
+/* Menu */
+.allMenu{
+    margin-top: -15px;
+}
+
+/* Fonctionnement */
+.fonctionnementIcon {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fonctionnementTitle{
+    font-size: 15px;
+}
+.fonctionnementFiltersFilter {
+    padding: 25px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.fonctionnementChiffre{
+    width: 30px;
+    height: 30px;
+    left: -15px;
+}
+
+/* Acceuil Restaurant */
+.restaurant .classement a {
+    height: 250px;
+}
+
+.restaurant .image {
+    height: 180px;
+}
+/* Bouton Commander */
+.boutonCommander{
+    padding: 15px 40px 15px 40px;
+}
+}
