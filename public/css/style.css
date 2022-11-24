@@ -607,6 +607,11 @@ footer .colonne ul {
   .allMenu {
     margin-top: -15px;
   }
+  /* Search Bouton */
+  .search__bouton {
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+  }
   /* Fonctionnement */
   .fonctionnementIcon {
     font-size: 15px;
